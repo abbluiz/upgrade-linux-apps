@@ -7,18 +7,18 @@ fi
 
 installPath="/usr/local/bin"
 
-script0="ula-update-from-git"
-script1="upgrade-linux-apps"
-script2="apt-upgrade-apps"
-script3="dnf-upgrade-apps"
+script[0]="ula-update-from-git"
+script[1]="upgrade-linux-apps"
+script[2]="apt-upgrade-apps"
+script[3]="dnf-upgrade-apps"
+script[4]="ula-uninstall"
 
-if [ -x "$installPath/$script0" -o -x "$installPath/$script1" -o -x "$installPath/$script2" -o -x "$installPath$script3" ]; then
+if [ -x "$installPath/${script[0]}" -o -x "$installPath/${script[1]}" -o -x "$installPath/${script[2]}" -o -x "$installPath/${script[3]}" -o -x "$installPath/${script[4]}" ]; then
     echo "Updating ula scripts on $installPath folder..."
 else
     echo "Installing ula scripts on $installPath folder..."
 fi
 
-    install "$script0.sh" "$installPath/$script0"
-    install "$script1.sh" "$installPath/$script1"
-    install "$script2.sh" "$installPath/$script2"
-    install "$script3.sh" "$installPath/$script3"
+for i in ${script[@]}; do install "$i.sh" "$installPath/$i"; done
+
+echo "upgrade-linux-apps installed."

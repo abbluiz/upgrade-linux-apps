@@ -16,6 +16,6 @@ git clone https://github.com/abbluiz/upgrade-linux-apps.git ~/.ula-tmp
 
 # TODO: diff
 
-~/.ula-tmp/upgrade-linux-apps/ula-install.sh
+~/.ula-tmp/ula-install.sh
 
-rm -rf ~/tmp
+rm -rf ~/.ula-tmp
