@@ -5,7 +5,7 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-echo "LABB apt-upgrade-apps"
+echo "apt will upgrade your apps..."
 sleep 1
 
 apt -y update ; apt -y upgrade ; apt -y autoremove ; apt -y autoclean

@@ -5,7 +5,7 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-echo "LABB dnf-upgrade-apps"
+echo "dnf will upgrade your apps..."
 sleep 1
 
 dnf -y check-update ; dnf -y upgrade ; dnf -y autoremove
