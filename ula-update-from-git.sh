@@ -47,4 +47,4 @@ done
 echo "Deleting temporary directory $HOME/.ula-tmp"
 rm -rf ~/.ula-tmp
 
-echo "All scripts updated from git."
+echo "All ula scripts updated from git."
