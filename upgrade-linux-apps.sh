@@ -11,3 +11,4 @@ elif hash dnf 2>/dev/null; then
 	dnf-upgrade-apps
 else
 	echo "Package manager not found or not supported."
+fi
