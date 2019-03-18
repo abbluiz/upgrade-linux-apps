@@ -10,7 +10,7 @@ $ git clone https://github.com/abbluiz/upgrade-linux-apps.git
 2. Run the installation script as root to install or update the scripts
 ```
 $ cd upgrade-linux-apps
-$ sudo ./ula-install.sh
+$ sudo ./install-ula.sh
 ```
 
 
