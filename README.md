@@ -1,8 +1,10 @@
-# Motivation and Purpose
+# upgrade-linux-apps
+
+## Motivation and Purpose
 
 If you like trying different Linux distros, you'll often need to learn how to upgrade, install, and remove packages on each distribution. This collection of Shell Scripts comes to solve that by automatically detecting which package manager to use when you instruct the apps to be upgraded, installed, or removed.
 
-# Installation instructions
+## Installation instructions
 
 1. Clone the repository:
 ```
@@ -15,34 +17,34 @@ $ cd upgrade-linux-apps
 $ sudo ./install-ula.sh
 ```
 
-## Easier update method
+### Easier update method
 
 1. Install it from source as instructed.
 2. Simply run `update-ula` as root. This also requires internet access.
 
-## Uninstallation
+### Uninstallation
 
 1. Run `uninstall-ula` as root.
 
-# TODO Usage
+## TODO Usage
 
-## Supported package managers
+### Supported package managers
 
 This list is expected to grow.
 
-### apt
+#### apt
 
 ```
 $ sudo ula-apt
 ```
 
-### dnf
+#### dnf
 
 ```
 $ sudo ula-dnf
 ```
 
-# TODO LIST
+## TODO LIST
 * Support more package managers
 * Use version numbers
 * Provide option to run scripts without assume=yes
