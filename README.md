@@ -4,36 +4,34 @@ If you like trying different Linux distros, you'll often need to learn how to up
 
 # Installation instructions
 
-1. Clone the repository
+1. Clone the repository:
 ```
 $ git clone https://github.com/abbluiz/upgrade-linux-apps.git
 ```
 
-2. Run the installation script as root to install or update the scripts
+2. Run the installation script as root to install or update the scripts:
 ```
 $ cd upgrade-linux-apps
 $ sudo ./install-ula.sh
 ```
 
+## Easier update method
 
-## Alternative update method (easier)
-
-1. Install it from source as instructed
+1. Install it from source as instructed.
 2. Simply run `update-ula` as root. This also requires internet access.
 
 ## Uninstallation
 
 1. Run `uninstall-ula` as root.
 
-# Usage
-
-TODO
+# TODO Usage
 
 ## Supported package managers
 
 This list is expected to grow.
 
 ### apt
+
 ```
 $ sudo ula-apt
 ```
@@ -44,7 +42,7 @@ $ sudo ula-apt
 $ sudo ula-dnf
 ```
 
-# TODO
+# TODO LIST
 * Support more package managers
 * Use version numbers
 * Provide option to run scripts without assume=yes
