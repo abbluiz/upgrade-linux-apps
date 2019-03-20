@@ -1,6 +1,8 @@
-Simple scripts to update repositories, upgrade and auto-remove apps on popular Linux package managers
+# Motivation and Purpose
 
-# Install or update from source
+If you like trying different Linux distros, you'll often need to learn how to upgrade, install, and remove packages on each distribution. This collection of Shell Scripts comes to solve that by automatically detecting which package manager to use when you instruct the apps to be upgraded, installed, or removed.
+
+# Installation instructions
 
 1. Clone the repository
 ```
@@ -19,7 +21,7 @@ $ sudo ./install-ula.sh
 1. Install it from source as instructed
 2. Simply run `update-ula` as root. This also requires internet access.
 
-## Uninstall
+## Uninstallation
 
 1. Run `uninstall-ula` as root.
 
