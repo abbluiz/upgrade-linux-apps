@@ -1,3 +1,7 @@
+#!/bin/bash
+
+scriptName="ula-what"
+
 if hash apt 2>/dev/null; then
 
 	echo "aptitude"
@@ -8,7 +12,7 @@ elif hash dnf 2>/dev/null; then
 
 else
 
-	echo "ula-what error: Package manager not found or not supported."
+	echo "$scriptName error: Package manager not found or not supported."
 	exit 1
 	
 fi

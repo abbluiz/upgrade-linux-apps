@@ -1,8 +1,10 @@
 #!/bin/bash
 
+scriptName="uninstall-ula"
+
 if [[ $EUID -ne 0 ]]; then
 
-   echo "uninstall-ula error: This script must be run as root" 
+   echo "$scriptName error: This script must be run as root" 
    exit 1
 
 fi

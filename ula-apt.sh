@@ -1,8 +1,10 @@
 #!/bin/bash
 
+scriptName="ula-apt"
+
 if [[ $EUID -ne 0 ]]; then
 
-   echo "ula-apt error: This script must be run as root." 
+   echo "$scriptName error: This script must be run as root." 
    exit 1
    
 fi
@@ -26,7 +28,7 @@ elif [ $1 == "remove" ]; then
 
 else
 
-    echo "ula-apt error: Invalid arguments."
+    echo "$scriptName error: Invalid arguments."
     exit 1
 
 fi

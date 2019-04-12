@@ -1,8 +1,10 @@
 #!/bin/bash
 
+scriptName="ula-upgrade"
+
 if [[ $EUID -ne 0 ]]; then
 
-   echo "ula-upgrade error: This script must be run as root." 
+   echo "$scriptName error: This script must be run as root." 
    exit 1
 
 fi
@@ -17,6 +19,6 @@ elif hash dnf 2>/dev/null; then
 
 else
 
-	echo "ula-upgrade error: Package manager not found or not supported."
+	echo "$scriptName error: Package manager not found or not supported."
 
 fi

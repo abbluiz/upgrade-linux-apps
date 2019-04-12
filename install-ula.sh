@@ -1,13 +1,25 @@
 #!/bin/bash
 
+scriptName="install-ula"
+
 if [[ $EUID -ne 0 ]]; then
 
-   echo "install-ula error: This script must be run as root." 
+   echo "$scriptName error: This script must be run as root." 
    exit 1
    
 fi
 
 source ula.conf
+
+updatingOrInstalling() {
+
+    if [ -x "$2/$3" ]; then
+        report="Updating"
+    else
+        report="Installing"
+    fi
+
+}
 
 for i in ${script[@]}
 do 
