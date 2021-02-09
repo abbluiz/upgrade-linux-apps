@@ -9,6 +9,14 @@ fi
 
 source ula.conf
 
+# Check for custom config
+if [ -e "custom.conf" ]; then
+
+    echo "Applying custom config..."
+    source custom.conf
+
+fi
+
 for i in ${script[@]} 
 do 
 
