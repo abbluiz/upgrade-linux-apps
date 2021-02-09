@@ -1,10 +1,8 @@
 #!/bin/bash
 
-scriptName="ula-dnf"
-
 if [[ $EUID -ne 0 ]]; then
 
-   echo "$scriptName error: This script must be run as root." 
+   echo "Error: Must be run as root." >&2 
    exit 1
    
 fi
@@ -28,7 +26,7 @@ elif [ $1 == "remove" ]; then
 
 else
 
-    echo "$scriptName error: Invalid arguments."
+    echo "Usage: $0 upgrade|install|remove" >&2
     exit 1
 
 fi

@@ -1,10 +1,8 @@
 #!/bin/bash
 
-scriptName="install-ula"
-
 if [[ $EUID -ne 0 ]]; then
 
-   echo "$scriptName error: This script must be run as root." 
+   echo "Error: Must be run as root." >&2
    exit 1
    
 fi

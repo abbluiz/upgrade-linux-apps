@@ -1,10 +1,8 @@
 #!/bin/bash
 
-scriptName="ula-remove"
-
 if [[ $EUID -ne 0 ]]; then
 
-   echo "$scriptName error: This script must be run as root." 
+   echo "Error: Must be run as root." >&2
    exit 1
 
 fi
@@ -19,6 +17,7 @@ elif hash dnf 2>/dev/null; then
 
 else
 
-	echo "$scriptName error: Package manager not found or not supported."
+	echo "Error: Package manager not found or not supported." >&2
+	exit 1
 
 fi
